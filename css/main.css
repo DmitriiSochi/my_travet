@@ -52,25 +52,37 @@ a, a:link, a:visited  {
 }
 /***************************************************/
 body {
-    height: 4132px;
+    height: 100%;
     background-color: #5A5560;
 }
 /***************footer*********************/
 .footer {
-    height: 770px;
+    /* height: 770px; */
     width: 100%;
-    background-image: url(../img/main.jpg);
-    background-repeat: no-repeat;
+    /* height: 100%; */
+    /* height: 600px; */
+    /* min-height: 20px; */
+    max-height: 770px;
+    /* background-image: url(../img/main.jpg);
+    background-repeat: no-repeat; */
     position: relative;
+    background-color: aqua;
+}
+.footer__img {
+    position:absolute;
+    width: 100%;
+    /* height: 100%; */
+    max-height: 770px;
 }
 .footer__logo {
 width: 400px;
 position: relative;
-left: 164px;
-top: 473px;
+/* left: 164px;
+top: 473px; */
 font-family: 'Montserrat', sans-serif; 
-font-size: 36px;
+font-size: calc(1em + 2vw);
 color: #F2EBE9;
+padding-top: calc(1em + 50vw);
 }
 .footer__logo::after {
     content: '';
@@ -79,8 +91,8 @@ color: #F2EBE9;
     height: 2px;
     background: #F2EBE9;
     position: relative;
-    top: -10px;
-    left: 5px;
+    /* top: -10px;
+    left: 5px; */
 }
 .footer__logo::before {
     content: '';
@@ -89,42 +101,42 @@ color: #F2EBE9;
     height: 2px;
     background: #F2EBE9;
     position: relative;
-    top: -10px;
-    left: -5px;
+    /* top: -10px;
+    left: -5px; */
 }
 .footer__with {
     width: 200px;
     position: relative;
-    top: 578px;
-    left: 99px;
+    /* top: 578px;
+    left: 99px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: calc(0.5em + 1vw);
 }
 .footer__year {
     width: 300px;
     position: relative;
-    top: 464px;
-    left: 150px;
+    /* top: 464px;
+    left: 150px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
-    font-size: 128px;
+    font-size: calc(4em + 4vw);
 }
 .footer__text {
     width: 316px;
     height: 58px;
     position: relative;
-    top: 480px;
-    left: 154px;
+    /* top: 480px;
+    left: 154px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: calc(0.5em + 2vw);
 }
 .footer__time {
     width: 272px;
     position: relative;
-    top: 487px;
-    left: 940px;
+    /* top: 487px;
+    left: 940px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -132,8 +144,8 @@ color: #F2EBE9;
 .footer__clock {
     width: 250px;
     position: relative;
-    top: 471px;
-    left: 1234px;
+    /* top: 471px;
+    left: 1234px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -141,26 +153,27 @@ color: #F2EBE9;
 .footer__play {
     width: 50px;
     position: relative;
-    top: 454px;
-    left: 1316px;
+    /* top: 454px;
+    left: 1316px; */
 }
 .footer__line {
     width: 388px;
     height: 2px;
     background: #F2EBE9;
     position: relative;
-    top: 474px;
-    left: 941px;
+    /* top: 474px;
+    left: 941px; */
 }
 .footer__socialNetwork {
     width: 190px;
     position: relative;
-    top: 420px;
-    left: 1709px;
+    /* top: 420px;
+    left: 1709px; */
 } 
 .footer__socialNetwork li {
     display: inline-block;
 }
+/*-------------------------*/
 .traveled {
     position: relative;
     width: 100%;
