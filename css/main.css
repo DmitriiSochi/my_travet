@@ -59,6 +59,8 @@ body {
 }
 /***************header*********************/
 .header {
+    display: grid;
+    grid-template-columns: ;
     max-height: 770px;
     width: 100%;
     background-image: url(../img/main.jpg);
@@ -74,8 +76,8 @@ body {
     max-height: 770px;
 } */
 .header__logo {
-/* min-width: 400px; */
-/* max-width: 600px; */
+min-width: 400px;
+max-width: 600px;
 position: relative;
 /* left: 164px;
 top: 473px; */
@@ -149,23 +151,23 @@ padding-left: calc(1rem + 9vw);
     padding-left: calc(1rem + 50vw);
 }
 
-/* .header__clock {
+.header__clock {
     width: 250px;
     position: absolute;
-    top: 471px;
-    left: 1234px;
+    /* top: 471px;
+    left: 1234px; */
     color: #F2EBE9;
     font-family: 'Montserrat', sans-serif;
     font-size: calc(0.2rem + 1vw);
     padding-left: calc(1rem + 72vw);
-} */
+}
 
 .header__play {
-    /* width: 50px; */
+    width: 50px;
     position: absolute;
     /* top: 454px; */
     /* left: 1316px; */
-    margin-left: calc(7rem + 70vw);
+    margin-left: calc(7rem + 71vw);
     font-size: calc(0.2rem + 1vw);
 }
 .header__line {
