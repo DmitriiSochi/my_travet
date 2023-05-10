@@ -60,7 +60,7 @@ body {
 /***************header*********************/
 .header {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: repit(3, 1fr);
     max-height: 770px;
     width: 100%;
     background-image: url(../img/main.jpg);
