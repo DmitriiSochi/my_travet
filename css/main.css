@@ -68,7 +68,6 @@ body {
     "with header__year header__year . . menu"
     ". header__text header__text header__time header__time socialNetwork";
     width: 100%;
-    height: calc(1rem + 2vw);
     max-height: 770px;
     background-image: url(../img/main.jpg);
     background-repeat: no-repeat;
