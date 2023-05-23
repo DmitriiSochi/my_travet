@@ -153,6 +153,7 @@ body {
     height: 100%;
     background-color: #5A5560;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 /***************header*********************/
@@ -244,16 +245,15 @@ body {
   } */
 .header__logo {
     align-self: end;
-    justify-self: left;
+    justify-self: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: calc(.3rem + 1vw);
     color: var(--text-color);
-    margin-left: calc(0.1rem + 4vw);
 }
 
 @media screen and (min-width: 700px) {
     .header__logo {
-        grid-column: 2/4;
+        grid-column: 2/3;
         grid-row: 4/5;
     }
 }
@@ -261,19 +261,19 @@ body {
 .header__logo::after {
     content: '';
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 2px;
     background: var(--bg-color);
-    margin-right: 5px;
+
 }
 
 .header__logo::before {
     content: '';
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 2px;
     background: var(--bg-color);
-    margin-right: 5px;
+    padding-right: 5px;    
 }
 
 .header__with {
@@ -289,7 +289,6 @@ body {
         grid-column: 1/2;
         grid-row: 5/6;
         align-self:flex-end;
-        margin-bottom: 5%;
         font-size: calc(0.1em + 1vw);
     }
 }
@@ -298,13 +297,15 @@ body {
     color: var(--text-color);
     font-family: var(--main-font);
     font-size: calc(1rem + 7vw);
-    justify-self: left;
+
 }
 
 @media screen and (min-width: 700px) {
     .header__year {
-        grid-column: 2/4;
+        grid-column: 2/3;
         grid-row: 5/6;
+        justify-self: center;
+        align-self: flax-end; 
     }
 }
 
@@ -363,7 +364,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .header__socialNetwork {
-        width: calc(2rem + 10vw);
+        width: calc(2rem + 15vw);
         grid-column: 6/7;
         grid-row: 6/7;
     }
@@ -376,6 +377,7 @@ body {
 .sn_img {
     width: calc(0.8rem + 2vw);
     padding-left: calc(0.1rem + 1vw);
+    
 }
 
 /* .header__menu {
@@ -385,6 +387,7 @@ body {
 @media screen and (min-width: 700px) {
     .menu__img {
         width: calc(0.1rem + 3vw);
+        max-width: 41px;
     }
 }
 
