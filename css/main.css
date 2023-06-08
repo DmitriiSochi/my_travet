@@ -157,12 +157,14 @@ body {
 }
 
 /***************header*********************/
-
+.head {
+    width: 100%;
+}
 .header {
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-template-rows: repeat(8, 1fr);
     width: 100%;
+    height: calc(15rem + 34vw);
     max-height: 770px;
     background-image: url(../img/main.jpg);
     background-repeat: no-repeat;
@@ -178,71 +180,30 @@ body {
         max-height: 770px;
     }
 }
-
-/* .header__img {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    max-height: 770px;
-} */
 .svg-path {
     display: none;
     max-width: 300px;
-    height: calc(1rem + 32vw);
+    height: calc(1rem + 24vw);
     stroke: rgb(255, 255, 255);
-    stroke-width: 4;
+    stroke-width: 3;
     fill: none;
     stroke-dasharray: 6 6;
-    margin: 0 auto;
-    max-height: 600px;
+    /* margin: 0 auto; */
+    /* max-height: 600px; */
 }
 
 @media screen and (min-width:700px) {
     .svg-path {
         display: block;
         grid-column: 6/7;
-
+        grid-row: 2/6;
     }
 }
 
 .svg-path path {
     stroke: rgb(255, 255, 255);
-    stroke-width: 10;
+    stroke-width: 3;
 }
-
-/* overlay object on svg path */
-/* .motion-container {
-    position: relative;
-  } */
-/* .svg-path {
-    position: absolute;
-    left: 0;
-    top: 0;
-  } */
-
-/* animating object on path */
-/* .motion-object {
-    offset-path: path('m371.15993,5.552219c-54.287427,0 -100.88459,34.648946 -123.693092,84.669606c-9.109596,-6.259219 -19.157461,-10.049168 -29.880906,-10.049168c-32.428047,0 -59.4128,32.106299 -67.753216,75.689526c-14.236033,-6.925289 -30.788597,-11.118233 -48.469617,-11.118233c-53.043097,0 -96.070598,35.718293 -96.070598,79.751951c0,39.747854 35.288261,72.424251 81.130155,78.46905c-2.054581,4.290319 -3.648266,8.538933 -3.648266,13.042551c0,42.159865 93.850462,76.544709 209.513837,76.544709c115.663356,0 209.513951,-34.384867 209.513837,-76.544709c0,-2.836666 -1.430563,-5.368156 -2.258432,-8.124874c5.066077,1.55056 10.082208,3.207196 15.635371,3.207196c30.941703,0.000117 56.113565,-25.875172 56.113565,-57.729298c0,-31.854149 -25.171862,-57.729274 -56.113565,-57.729274c-3.791832,0 -7.016072,1.61196 -10.597307,2.351944c3.131438,-12.736883 5.211771,-25.733191 5.211771,-39.555256c0,-84.319659 -62.015778,-152.875674 -138.633498,-152.875674l-0.000038,-0.000047z');
-    animation: move 3s linear infinite;
-  } */
-
-/* @keyframes move {
-    0% { 
-      offset-distance: 0%;
-    }
-    100% { 
-      offset-distance: 100%;
-    }
-  }
-   */
-/* deco */
-
-/* .motion-object {
-    width: 40px;
-    height: 40px;
-    background: hotpink;
-    border-radius: 50%;
-  } */
 .header__logo {
     align-self: end;
     justify-self: center;
